@@ -1,0 +1,37 @@
+{
+  "name": "simple-abi-mardkown",
+  "version": "0.0.1",
+  "description": "Generate markdown docs from ABI js file",
+  "main": "index.js",
+  "repository": "https://github.com/edd/simple-abi-docgen",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.test.js | tap-dot",
+    "format": "prettier **/*.js --write"
+  },
+  "author": "Edd <edd@vega.xyz>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick;": "^2.0.1",
+    "tap-dot": "^2.0.0",
+    "tape": "^5.0.1"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "npm run test"
+    }
+  }
+}
