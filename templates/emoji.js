@@ -2,5 +2,7 @@ module.exports = {
   emojiPure: '🔒',
   emojiView: '👁',
   emojiConstant: '📌',
-  emojiNonpayable: '🙅'
+  emojiNonpayable: '🙅',
+  emojiIndexed: '✅',
+  emojiUnindexed: '❌'
 }

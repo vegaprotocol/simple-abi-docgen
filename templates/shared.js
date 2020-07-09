@@ -4,7 +4,9 @@ const {
   emojiView,
   emojiConstant,
   emojiPure,
-  emojiNonpayable
+  emojiNonpayable,
+  emojiIndexed,
+  emojiUnindexed
 } = require('./emoji')
 const { links } = require('../links')
 
@@ -12,8 +14,8 @@ function inputs(e) {
   if (!e || e.length === 0) {
     return
   }
-  out('|Input name|Type|')
-  out('|----|----|')
+  out('|Input name|Type|Index|')
+  out('|----|----|----|')
   e.forEach(ev => out(`|${ev.name}|[${ev.type}](${links[ev.type]})|`))
   out('\r\n')
 }
@@ -39,6 +41,10 @@ function mutable(i) {
   } else {
     return ''
   }
+}
+
+function indexed(i) {
+  return i && i.indexed ? emojiIndexed : emojiUnindexed
 }
 
 function payable(i) {
@@ -69,5 +75,6 @@ module.exports = {
   mutable,
   constant,
   payable,
+  indexed,
   title
 }

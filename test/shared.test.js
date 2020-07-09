@@ -1,6 +1,6 @@
 const test = require('tape')
 
-const { payable, constant, mutable } = require('../templates/shared')
+const { indexed, payable, constant, mutable } = require('../templates/shared')
 
 test('Payable', t => {
   t.plan(4)
@@ -26,4 +26,13 @@ test('mutable', t => {
   t.equal(mutable({ stateMutability: 'invalid-value' }).length, 0)
   t.equal(mutable({ something: 'else' }).length, 0)
   t.equal(mutable().length, 0)
+})
+
+test('Indexed', t => {
+  const { emojiIndexed, emojiUnindexed } = require('../templates/emoji')
+  t.plan(4)
+  t.equal(indexed({ indexed: true }), emojiIndexed)
+  t.equal(indexed({ indexed: false }), emojiUnindexed)
+  t.equal(indexed({ noValue: 'test' }), emojiUnindexed)
+  t.equal(indexed(), emojiUnindexed)
 })
