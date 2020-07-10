@@ -1,5 +1,5 @@
 {
-  "name": "simple-abi-mardkown",
+  "name": "@vegaprotocol/simple-abi-docgen",
   "version": "0.0.1",
   "description": "Generate markdown docs from ABI js file",
   "main": "index.js",
