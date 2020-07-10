@@ -1,12 +1,8 @@
 name: Format (prettier)
 
 on:
-    push:
-        branches:
-            - 'master'
     pull_request:
         paths:
-            - '**.css'
             - '**.js'
             - '**.json'
 
