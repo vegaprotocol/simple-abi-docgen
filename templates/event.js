@@ -7,7 +7,7 @@ function renderEvent(e, out) {
 
 module.exports = {
   renderEvents: function events(events, out) {
-    out(`##Events`)
+    out(`## Events`)
     events.forEach(e => renderEvent(e, out))
   },
   renderEvent

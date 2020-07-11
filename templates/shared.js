@@ -62,7 +62,7 @@ function constant(i) {
 
 function title(i, out) {
   const flags = [constant(i), payable(i), mutable(i)].filter(f => f.length > 1)
-  out(`###<a id="${i.name.toLowerCase()}-${i.type}">${i.name}</a>`)
+  out(`### <a id="${i.name.toLowerCase()}-${i.type}">${i.name}</a>`)
   if (flags.length > 0) {
     out(`${flags.join(', ')}\n`)
   }

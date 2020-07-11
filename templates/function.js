@@ -8,7 +8,7 @@ function renderFunction(f, out) {
 
 module.exports = {
   renderFunctions: function functions(functions, out) {
-    out(`##Functions`)
+    out(`## Functions`)
     functions.forEach(f => renderFunction(f, out))
   },
   renderFunction
