@@ -2,7 +2,7 @@ const test = require('tape')
 
 const { indexed, payable, constant, mutable } = require('../templates/shared')
 
-test('Payable', t => {
+test('Payable function returns correctly', t => {
   t.plan(4)
   t.notEqual(payable({ payable: true }).length, 0)
   t.equal(payable({ payable: false }).length, 0)
@@ -10,7 +10,7 @@ test('Payable', t => {
   t.equal(payable().length, 0)
 })
 
-test('Constant', t => {
+test('Constant function returns correctly', t => {
   t.plan(4)
   t.notEqual(constant({ constant: true }).length, 0)
   t.equal(constant({ constant: false }).length, 0)
@@ -18,7 +18,7 @@ test('Constant', t => {
   t.equal(constant().length, 0)
 })
 
-test('mutable', t => {
+test('Mutable function returns correctly', t => {
   t.plan(6)
   t.notEqual(mutable({ stateMutability: 'pure' }).length, 0)
   t.notEqual(mutable({ stateMutability: 'view' }).length, 0)
@@ -28,7 +28,7 @@ test('mutable', t => {
   t.equal(mutable().length, 0)
 })
 
-test('Indexed', t => {
+test('Indexed function returns correctly', t => {
   const { emojiIndexed, emojiUnindexed } = require('../templates/emoji')
   t.plan(4)
   t.equal(indexed({ indexed: true }), emojiIndexed)

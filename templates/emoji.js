@@ -3,6 +3,6 @@ module.exports = {
   emojiView: '👁',
   emojiConstant: '📌',
   emojiNonpayable: '🙅',
-  emojiIndexed: '✅',
-  emojiUnindexed: '❌'
+  emojiIndexed: '☑️',
+  emojiUnindexed: '🔘'
 }

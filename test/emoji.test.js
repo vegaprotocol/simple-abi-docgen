@@ -1,6 +1,6 @@
 const test = require('tape')
 
-test('Emoji set', t => {
+test('Emoji exist', t => {
   const emoji = require('../templates/emoji')
   t.plan(6)
   t.ok(emoji.emojiPure, 'Pure emoji exists')
