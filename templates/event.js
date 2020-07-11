@@ -6,9 +6,9 @@ function renderInputs(e, out) {
     return
   }
   out('|Input name|Type|Indexed|')
-  out('|----|----|----|')
+  out('|----|----|:----:|')
   e.forEach(ev =>
-    out(`|${ev.name}|[${ev.type}](${links[ev.type]})|${indexed(ev)}|`)
+    out(`|${ev.name}|[${ev.type}](${links[ev.type]})|  ${indexed(ev)}  |`)
   )
   out('\n')
 }

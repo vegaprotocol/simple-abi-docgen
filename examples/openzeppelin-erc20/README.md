@@ -13,18 +13,18 @@
 ### <a id="approval-event">Approval</a>
 
 | Input name | Type                                                                      | Indexed |
-| ---------- | ------------------------------------------------------------------------- | ------- |
-| owner      | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
-| spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
-| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘      |
+| ---------- | ------------------------------------------------------------------------- | :-----: |
+| owner      | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |   ☑️    |
+| spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |   ☑️    |
+| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) |   🔘    |
 
 ### <a id="transfer-event">Transfer</a>
 
 | Input name | Type                                                                      | Indexed |
-| ---------- | ------------------------------------------------------------------------- | ------- |
-| from       | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
-| to         | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
-| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘      |
+| ---------- | ------------------------------------------------------------------------- | :-----: |
+| from       | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |   ☑️    |
+| to         | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |   ☑️    |
+| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) |   🔘    |
 
 ## Functions
 
