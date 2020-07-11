@@ -1,9 +1,12 @@
 {
   "name": "@vegaprotocol/simple-abi-docgen",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Generate markdown docs from ABI js file",
   "main": "index.js",
   "repository": "https://github.com/vegaprotocol/simple-abi-docgen",
+  "bin": {
+    "simple-abi-docgen": "index.js"
+  },
   "directories": {
     "test": "test"
   },

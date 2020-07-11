@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs')
 const { toc } = require('./templates/toc')
 const { renderEvents } = require('./templates/event')
