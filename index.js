@@ -6,17 +6,21 @@ const { exit } = require('process')
 
 const events = []
 const functions = []
-const out = console.log
 const args = process.argv.slice(2)
+let output = ''
 
 if (!args[0]) {
-  out('File not specified')
+  console.error('File not specified')
   process.exit(1)
 }
 
 if (!args[1]) {
-  out('Title not specified')
+  console.error('Title not specified')
   process.exit(1)
+}
+
+function out(text) {
+  output += `${text}\n`
 }
 
 function jsonReader(filePath, cb) {
@@ -51,9 +55,20 @@ jsonReader(args[0], (err, data) => {
     }
   })
 
+  if (events.length === 0 && functions.length === 0) {
+    console.error('Output will be pretty sparse')
+    process.exit(1)
+  }
+
   toc(args[1], events, functions, out)
-  out(`\r\n`)
-  renderEvents(events, out)
-  out(`\r\n`)
-  renderFunctions(functions, out)
+  if (events.length > 0) {
+    out(`\n`)
+    renderEvents(events, out)
+  }
+  if (functions.length > 0) {
+    out(`\n`)
+    renderFunctions(functions, out)
+  }
+
+  console.log(output)
 })

@@ -1,4 +1,3 @@
-const out = console.log
 const {
   emojiPayable,
   emojiView,
@@ -10,20 +9,20 @@ const {
 } = require('./emoji')
 const { links } = require('../links')
 
-function inputs(e) {
+function inputs(e, out) {
   if (!e || e.length === 0) {
     return
   }
   out('|Input name|Type|Index|')
   out('|----|----|----|')
   e.forEach(ev => out(`|${ev.name}|[${ev.type}](${links[ev.type]})|`))
-  out('\r\n')
+  out('\n')
 }
-function outputs(e) {
+function outputs(e, out) {
   if (!e || e.length === 0) {
     return
   }
-  out('\r\n')
+  out('\n')
   e.forEach(ev => out(`**Returns** [${ev.type}](${links[ev.type]})`))
 }
 
@@ -61,11 +60,11 @@ function constant(i) {
   return i.constant ? `${emojiConstant} Constant` : ''
 }
 
-function title(i) {
+function title(i, out) {
   const flags = [constant(i), payable(i), mutable(i)].filter(f => f.length > 1)
-  out(`## ${i.name}`)
+  out(`###<a id="${i.name.toLowerCase()}-${i.type}">${i.name}</a>`)
   if (flags.length > 0) {
-    out(`${flags.join(', ')}\r\n`)
+    out(`${flags.join(', ')}\n`)
   }
 }
 

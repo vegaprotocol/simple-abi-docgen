@@ -1,15 +1,14 @@
-const out = console.log
 const { renderInputs, title } = require('./shared')
 
-function renderEvent(e) {
-  title(e)
-  renderInputs(e.inputs)
+function renderEvent(e, out) {
+  title(e, out)
+  renderInputs(e.inputs, out)
 }
 
 module.exports = {
   renderEvents: function events(events, out) {
-    out(`# Events`)
-    events.forEach(renderEvent)
+    out(`##Events`)
+    events.forEach(e => renderEvent(e, out))
   },
   renderEvent
 }
