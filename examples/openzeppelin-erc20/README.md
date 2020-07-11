@@ -1,10 +1,10 @@
 # ERC20
 
-## Events
+## All events
 
 [Approval](#approval-event), [Transfer](#transfer-event)
 
-## Functions
+## All functions
 
 [allowance](#allowance-function), [approve](#approve-function), [balanceOf](#balanceof-function), [totalSupply](#totalsupply-function), [transfer](#transfer-function), [transferFrom](#transferfrom-function)
 
@@ -12,19 +12,19 @@
 
 ### <a id="approval-event">Approval</a>
 
-| Input name | Type                                                                      | Index |
-| ---------- | ------------------------------------------------------------------------- | ----- |
-| owner      | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
-| spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
-| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘    |
+| Input name | Type                                                                      | Indexed |
+| ---------- | ------------------------------------------------------------------------- | ------- |
+| owner      | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
+| spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
+| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘      |
 
 ### <a id="transfer-event">Transfer</a>
 
-| Input name | Type                                                                      | Index |
-| ---------- | ------------------------------------------------------------------------- | ----- |
-| from       | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
-| to         | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
-| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘    |
+| Input name | Type                                                                      | Indexed |
+| ---------- | ------------------------------------------------------------------------- | ------- |
+| from       | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
+| to         | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️      |
+| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘      |
 
 ## Functions
 

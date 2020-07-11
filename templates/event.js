@@ -5,7 +5,7 @@ function renderInputs(e, out) {
   if (!e || e.length === 0) {
     return
   }
-  out('|Input name|Type|Index|')
+  out('|Input name|Type|Indexed|')
   out('|----|----|----|')
   e.forEach(ev =>
     out(`|${ev.name}|[${ev.type}](${links[ev.type]})|${indexed(ev)}|`)
