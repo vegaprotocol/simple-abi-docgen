@@ -1,4 +1,17 @@
-const { renderInputs, title } = require('./shared')
+const { indexed, title } = require('./shared')
+const { links } = require('../links')
+
+function renderInputs(e, out) {
+  if (!e || e.length === 0) {
+    return
+  }
+  out('|Input name|Type|Index|')
+  out('|----|----|----|')
+  e.forEach(ev =>
+    out(`|${ev.name}|[${ev.type}](${links[ev.type]})|${indexed(ev)}|`)
+  )
+  out('\n')
+}
 
 function renderEvent(e, out) {
   title(e, out)

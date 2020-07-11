@@ -14,17 +14,17 @@
 
 | Input name | Type                                                                      | Index |
 | ---------- | ------------------------------------------------------------------------- | ----- |
-| owner      | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
-| spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
-| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) |
+| owner      | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
+| spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
+| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘    |
 
 ### <a id="transfer-event">Transfer</a>
 
 | Input name | Type                                                                      | Index |
 | ---------- | ------------------------------------------------------------------------- | ----- |
-| from       | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
-| to         | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
-| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) |
+| from       | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
+| to         | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  | ☑️    |
+| value      | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) | 🔘    |
 
 ## Functions
 
@@ -32,8 +32,8 @@
 
 👁 View
 
-| Input name | Type                                                                     | Index |
-| ---------- | ------------------------------------------------------------------------ | ----- |
+| Input name | Type                                                                     |
+| ---------- | ------------------------------------------------------------------------ |
 | owner      | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address) |
 | spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address) |
 
@@ -43,8 +43,8 @@
 
 🙅 Non-payable
 
-| Input name | Type                                                                      | Index |
-| ---------- | ------------------------------------------------------------------------- | ----- |
+| Input name | Type                                                                      |
+| ---------- | ------------------------------------------------------------------------- |
 | spender    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
 | amount     | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) |
 
@@ -54,8 +54,8 @@
 
 👁 View
 
-| Input name | Type                                                                     | Index |
-| ---------- | ------------------------------------------------------------------------ | ----- |
+| Input name | Type                                                                     |
+| ---------- | ------------------------------------------------------------------------ |
 | account    | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address) |
 
 **Returns** [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers)
@@ -70,8 +70,8 @@
 
 🙅 Non-payable
 
-| Input name | Type                                                                      | Index |
-| ---------- | ------------------------------------------------------------------------- | ----- |
+| Input name | Type                                                                      |
+| ---------- | ------------------------------------------------------------------------- |
 | recipient  | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
 | amount     | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) |
 
@@ -81,8 +81,8 @@
 
 🙅 Non-payable
 
-| Input name | Type                                                                      | Index |
-| ---------- | ------------------------------------------------------------------------- | ----- |
+| Input name | Type                                                                      |
+| ---------- | ------------------------------------------------------------------------- |
 | sender     | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
 | recipient  | [address](https://solidity.readthedocs.io/en/v0.6.10/types.html#address)  |
 | amount     | [uint256](https://solidity.readthedocs.io/en/v0.6.10/types.html#integers) |
