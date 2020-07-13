@@ -5,7 +5,12 @@ Generates a basic Markdown overview from a given [ABI file](https://solidity.rea
 It's pretty basic.
 
 ## Running it
+The simplest way to run it is with npx:
+```
+npx @vegaprotocol/simple-abi-docgen contract.json Title > contract.md
+```
 
+But if you want to clone it and run the script, you can also do it this way:
 ```
 node index.js ./contract.json My Contract Title
 ```
