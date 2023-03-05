@@ -19,7 +19,7 @@
   "author": "Edd <edd@vega.xyz>",
   "license": "MIT",
   "devDependencies": {
-    "faucet": "0.0.1",
+    "faucet": "0.0.4",
     "husky": "^4.2.5",
     "mdv": "^1.3.0",
     "prettier": "^2.0.5",
